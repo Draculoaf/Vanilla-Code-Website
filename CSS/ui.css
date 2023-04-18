@@ -1,0 +1,148 @@
+.nav-bar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 20%;
+  left: 0;
+  margin-top: 60px;
+}
+
+.nav-bar li {
+  list-style: none;
+  overflow: visible;
+}
+
+.nav-bar a {
+  padding: 8px 8px 8px 8px;
+  font-size: 25px;
+  color: #3f3f3f;
+  display: block;
+  transition: 0.3s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-bar a:hover {
+  color: #8f8f8f;
+  cursor: pointer;
+}
+
+a.active {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 5%;
+}
+
+.vertical-line {
+  border-right: 3px solid;
+  border-color: #8f8f8f;
+  height: 80%;
+  position: fixed;
+  left: 18%;
+  top: 10%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.burger-button {
+  font-size: 25px;
+  margin-left: 4%;
+  margin-top: 5%;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#menu-bar:checked ~ ul {
+  left: 0;
+}
+
+.cross-button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cross-button:hover {
+  color: #8f8f8f;
+}
+
+@media (max-width: 1300px) {
+  .burger-button {
+    display: block;
+    position: fixed;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .nav-bar {
+    transition: ease-in-out;
+    width: 75vw;
+    background: rgb(228, 228, 228);
+    transition: ease-in-out;
+    top: -60px;
+    margin-left: -120%;
+    max-width: 300px;
+  }
+
+  .nav-bar a:hover {
+    cursor: pointer;
+  }
+
+  #check:checked ~ .nav-bar {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 340px) {
+  .nav-bar {
+    width: 100vw;
+  }
+}
+
+.back-button {
+  background-color: white;
+  border: solid black;
+  border-width: 2px;
+  margin-left: 20%;
+}
+.back-button:hover {
+  transform: scale(1.5);
+}
+
+.u-image {
+  margin-left: 27%;
+  max-width: 1000px;
+  margin-top: 1.5%;
+}
+
+.u-datart {
+  margin-left: 20%;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  width: 82%;
+  background-color: rgb(168, 168, 168);
+  color: white;
+  text-align: center;
+}

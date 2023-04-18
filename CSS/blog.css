@@ -1,0 +1,25 @@
+.h-entry {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+
+.h-entry p {
+  margin-left: 20%;
+}
+
+.u-image img {
+  max-height: 300px;
+}
+
+.p-article-title {
+  font-size: 25px;
+  margin-left: 20%;
+}
+
+.p-sub-head {
+  font-size: 20px;
+  margin-left: 20%;
+}

@@ -1,0 +1,14 @@
+body {
+  margin-left: 20%;
+}
+
+#intro {
+  font-size: 5rem;
+  margin-top: 20%;
+}
+
+#start_butt {
+  background-color: black;
+  color: white;
+  margin: 1rem 1 rem 1 rem 1rem;
+}
