@@ -1,0 +1,128 @@
+.card {
+  transition: 0.3s;
+  width: 15%;
+  border-radius: 10px;
+  margin-top: 2%;
+  border: solid;
+  border-radius: 5%;
+  border-width: 2px;
+  background-color: rgb(180, 254, 204);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  display: initial;
+}
+
+@media (max-width: 800px) {
+  .card {
+    overflow: hidden;
+    width: 30%;
+    margin-left: 20%;
+  }
+
+  .container {
+    padding: 5% 5%;
+  }
+}
+
+/*Chat*/
+* {
+  box-sizing: border-box;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* Place the container to the left */
+.left {
+  left: 50%;
+}
+
+/* Place the container to the right */
+.right {
+  right: -18%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(0, 0, 0);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(118, 243, 109);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgb(0, 0, 0);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(223, 233, 236) transparent transparent;
+}
+
+/* The actual content */
+.content-left {
+  padding: 20px 30px;
+  background-color: rgb(118, 243, 109);
+  position: relative;
+  border-radius: 6px;
+}
+
+.content-right {
+  padding: 20px 30px;
+  background-color: rgb(223, 233, 236);
+  position: relative;
+  border-radius: 6px;
+}
+
+.proj-div div:not(:hover) {
+  filter: blur(3px);
+}
+
+@media screen and (max-width: 600px) {
+  /* Place the chats to the left */
+  .proj-div::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+}
